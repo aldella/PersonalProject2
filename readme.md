@@ -1,5 +1,5 @@
-#pro03 : 선생님버전 프로젝트
-#personalproject2 : 내 프로젝트
+# pro03 : 선생님버전 프로젝트
+# personalproject2 : 내 프로젝트
 
 # 1. 프로젝트 개요
 
