@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member">
+
+	<select id="getMemberList" resultType="com.personalproject2.per.dto.Member">
+		select * from member
+	</select>
+	
+	<select id="getMember">
+		select * from member where id=#{id}
+	</select>
+	
+	<insert id="insMember">
+		insert into member values (#{id}, #{pw}, #{name}, #{email}, #{tel}, #{addr1}, #{addr2}, #{postcode}, #{birth}, #{point}, #{regdate})
+	</insert>
+
+	<update id="upMember">
+		update member set price=#{price} where id=#{id}
+	</update>
+	
+	<update id="delMember">
+		delete from member where id=#{id}
+	</update>
+	
+
+</mapper>

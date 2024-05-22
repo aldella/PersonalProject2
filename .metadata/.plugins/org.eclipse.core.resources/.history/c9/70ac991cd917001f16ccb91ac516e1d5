@@ -1,0 +1,17 @@
+package com.personalproject2.per.dto;
+
+public class Member {
+	
+	String id;
+	String pw;
+	String name;
+	String email;
+	String tel;
+	String addr1;
+	String addr2;
+	String postcode;
+	String birth;
+	int point;
+	String regdate;
+
+}

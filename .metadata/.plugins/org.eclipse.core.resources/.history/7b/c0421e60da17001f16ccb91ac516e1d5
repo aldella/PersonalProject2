@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="qna">
+
+	<select id="getQnaList" resultType="com.personalproject2.per.dto.Qna">
+		select * from qna
+	</select>
+	
+	<select id="getQna">
+		select * from qna where sno=#{sno}
+	</select>
+	
+	<insert id="insQna">
+		insert into qna values (#{sno}, #{pno}, #{amount}, #{tot}, #{id}, #{paymethod}, #{paynum}, #{dno}, #{addr}, #{tel}, #{delcom}, #{deltel}, #{delno}, #{delstatus})
+	</insert>
+
+	<update id="upQna">
+		update qna set amount=#{amount}, where sno=#{sno}
+	</update>
+	
+	<update id="delQna">
+		delete from qna where sno=#{sno}
+	</update>
+	
+
+</mapper>

@@ -1,0 +1,5 @@
+package com.personalproject2.per.dto;
+
+public class inventory {
+
+}

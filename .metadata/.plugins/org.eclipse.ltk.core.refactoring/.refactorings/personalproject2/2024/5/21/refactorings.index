@@ -1,0 +1,39 @@
+1716185424936	Delete element
+1716185428064	Rename resource 'log4jdbc.log4j2 (1).properties'
+1716185519308	Move file
+1716185523508	Rename resource 'sampleMapper (2).xml'
+1716185526446	Rename resource 'mybatis-config (2).xml'
+1716186252050	Copy compilation unit
+1716186487845	Rename resource 'sampleMapper.xml'
+1716186605150	Copy compilation unit
+1716186614564	Rename type 'TestDAOImp1'
+1716186729461	Rename package 'com.personalproject2.myapp'
+1716186735002	Rename package 'com.personalproject2.Controller'
+1716186738916	Rename package 'com.personalproject2.cont'
+1716187310027	Rename package 'com.personalproject2.ctrl'
+1716187565216	Rename package 'com.personalproject2.myapp'
+1716189651498	Rename package 'com.personalproject2.ctrl'
+1716190293085	Rename package 'com.personalproject2'
+1716259597273	Copy compilation unit
+1716259625335	Rename type 'AdminFilter'
+1716260945866	Delete element
+1716260952084	Rename package 'com.personalproject2.dao'
+1716260999190	Rename package 'com.personalproject2.dto'
+1716261060212	Copy file
+1716261586019	Copy compilation unit
+1716261591263	Rename type 'BoardDAO'
+1716273673810	Move file
+1716273962581	Copy file
+1716273967574	Copy file
+1716274001106	Move folder
+1716340195282	Rename type 'inventory'
+1716340201948	Rename type 'sales'
+1716340741387	Copy file
+1716341132391	Copy file
+1716341321348	Copy file
+1716341419274	Copy file
+1716341683671	Copy file
+1716341726003	Rename resource 'inventoryInventory.xml'
+1716341812581	Copy file
+1716341908062	Copy file
+1716341996216	Rename resource 'fileboardMapper2.xml'

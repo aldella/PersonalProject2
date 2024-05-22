@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="qna">
+
+	<select id="getQnaList" resultType="com.personalproject2.per.dto.Qna">
+		select * from qna
+	</select>
+	
+	<select id="getQna">
+		select * from qna where no=#{no}
+	</select>
+	
+	<insert id="insQna">
+		insert into qna values (#{no}, #{title}, #{content}, #{lev}, #{parno}, #{hits}, #{resdate}, #{id}, #{name})
+	</insert>
+
+	<update id="upQna">
+		update qna set content=#{content} where no=#{no}
+	</update>
+	
+	<update id="delQna">
+		delete from qna where no=#{no}
+	</update>
+	
+
+</mapper>

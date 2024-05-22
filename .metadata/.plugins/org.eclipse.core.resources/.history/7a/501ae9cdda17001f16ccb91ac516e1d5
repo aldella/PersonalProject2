@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="product">
+
+	<select id="getProductList" resultType="com.personalproject2.per.dto.Product">
+		select * from product
+	</select>
+	
+	<select id="getProduct">
+		select * from product where pno=#{pno}
+	</select>
+	
+	<insert id="insProduct">
+		insert into product values (#{pno}, #{cate}, #{pname}, #{price}, #{com}, #{img})
+	</insert>
+
+	<update id="upProduct">
+		update product set content=#{content} where pno=#{pno}
+	</update>
+	
+	<update id="delProduct">
+		delete from product where pno=#{pno}
+	</update>
+	
+
+</mapper>

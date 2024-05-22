@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sales">
+
+	<select id="getSalesList" resultType="com.personalproject2.per.dto.Sales">
+		select * from sales
+	</select>
+	
+	<select id="getSales">
+		select * from sales where sno=#{sno}
+	</select>
+	
+	<insert id="insSales">
+		insert into sales values (#{sno}, #{pno}, #{amount}, #{tot}, #{id}, #{paymethod}, #{paynum}, #{dno}, #{addr}, #{tel}, #{delcom}, #{deltel}, #{delno}, #{delstatus})
+	</insert>
+
+	<update id="upSales">
+		update sales set content=#{content} where sno=#{sno}
+	</update>
+	
+	<update id="delSales">
+		delete from sales where sno=#{sno}
+	</update>
+	
+
+</mapper>
+<!-- namespace나 해당 명령의 id는 메소드 이름을 의미하며, 중복되면 절대 안된다. -->

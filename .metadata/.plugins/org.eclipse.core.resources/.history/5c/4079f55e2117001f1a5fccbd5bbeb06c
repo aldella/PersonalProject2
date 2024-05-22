@@ -1,0 +1,5 @@
+package com.personalproject2.service;
+
+public class BoardServiceImp1 interface BoardService{
+
+}

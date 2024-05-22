@@ -1,0 +1,14 @@
+package com.personalproject2.dao;
+
+import java.util.List;
+
+import com.personalproject2.dto.Test;
+
+public interface TestDAO {
+	public List<Test> getTestList();
+	public Test getTest(int no);
+	public void insTest(Test test);
+	public void upTest(Test test);
+	public void delTest(Test test);
+	
+}

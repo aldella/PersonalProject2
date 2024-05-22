@@ -1,0 +1,34 @@
+package com.personalproject2.per.dao;
+
+import java.util.List;
+
+import com.personalproject2.per.dto.Board;
+
+public class BoardDAOImp1 implements BoardDAO {
+
+	@Override
+	public List<Board> getBoardList() {
+		return null;
+	}
+
+	@Override
+	public Board getBoard(int bno) {
+		return null;
+	}
+
+	@Override
+	public void insBoard(Board board) {
+		
+	}
+
+	@Override
+	public void upBoard(Board board) {
+		
+	}
+
+	@Override
+	public void delBoard(Board board) {
+		
+	}
+
+}

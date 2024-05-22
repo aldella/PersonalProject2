@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="inventory">
+
+	<select id="getInventoryList" resultType="com.personalproject2.per.dto.Inventory">
+		select * from inventory
+	</select>
+	
+	<select id="getInventory">
+		select * from inventory where ino=#{ino}
+	</select>
+	
+	<insert id="insInventory">
+		insert into inventory values (#{ino}, #{pw}, #{name}, #{email}, #{tel}, #{addr1}, #{addr2}, #{postcode}, #{birth}, #{point}, #{regdate})
+	</insert>
+
+	<update id="upInventory">
+		update inventory set name=#{name} where ino=#{ino}
+	</update>
+	
+	<update id="delInventory">
+		delete from inventory where ino=#{ino}
+	</update>
+	
+
+</mapper>

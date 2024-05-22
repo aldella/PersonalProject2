@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="board">
+
+	<select id="getBoardList" resultType="com.personalproject2.per.dto.Board">
+		select * from board
+	</select>
+	
+	<select id="getBoard">
+		select * from board where no=#{no}
+	</select>
+	
+	<insert id="insBoard">
+		insert into board values (#{no}, #{description})
+	</insert>
+
+	<update id="upBoard">
+		update board set no=#{no} where description=#{description}
+	</update>
+	
+	<update id="delBoard">
+		delete from board where no=#{no}
+	</update>
+	
+
+</mapper>
+<!-- namespace나 해당 명령의 id는 메소드 이름을 의미하며, 중복되면 절대 안된다. -->

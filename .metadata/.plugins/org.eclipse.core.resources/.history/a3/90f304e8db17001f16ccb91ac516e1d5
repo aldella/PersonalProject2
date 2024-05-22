@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="free">
+
+	<select id="getFreeList" resultType="com.personalproject2.per.dto.Free">
+		select * from free
+	</select>
+	
+	<select id="getFree">
+		select * from free where no=#{no}
+	</select>
+	
+	<insert id="insFree">
+		insert into free values (#{no}, #{title}, #{content}, #{hits}, #{resdate}, #{id}, #{name}, #{remark})
+	</insert>
+
+	<update id="upFree">
+		update free set name=#{name} where no=#{no}
+	</update>
+	
+	<update id="delFree">
+		delete from free where no=#{no}
+	</update>
+	
+
+</mapper>

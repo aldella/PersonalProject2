@@ -1,0 +1,42 @@
+package com.personalproject2.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.personalproject2.dao.TestDAO;
+import com.personalproject2.dto.Test;
+
+@Service
+public class TestServiceImp1 implements TestService {
+
+	@Autowired
+	private TestDAO testDAO;
+	
+	@Override
+	public List<Test> getTestList() {
+		return testDAO.getTestList();
+	}
+
+	@Override
+	public Test getTest(int no) {
+		return testDAO.getTest(no);
+	}
+
+	@Override
+	public void insTest(Test test) {
+		testDAO.insTest(test);
+	}
+
+	@Override
+	public void upTest(Test test) {
+		testDAO.upTest(test);
+	}
+
+	@Override
+	public void delTest(Test test) {
+		testDAO.delTest(test);
+	}
+	
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fileboard">
+
+	<select id="getFileboardList" resultType="com.personalproject2.per.dto.Fileboard">
+		select * from fileboard
+	</select>
+	
+	<select id="getFileboard">
+		select * from fileboard where no=#{no}
+	</select>
+	
+	<insert id="insFileboard">
+		insert into fileboard values (#{no}, #{title}, #{content}, #{url}, #{hits}, #{redate}, #{author})
+	</insert>
+
+	<update id="upFileboard">
+		update fileboard set content=#{content} where no=#{no}
+	</update>
+	
+	<update id="delFileboard">
+		delete from fileboard where no=#{no}
+	</update>
+	
+
+</mapper>
