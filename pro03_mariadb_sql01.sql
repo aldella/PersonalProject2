@@ -1,7 +1,6 @@
-create database ediya;
+create database morning;
 
-use ediya;
-
+use morning;
 
 -- board, member, free, fileboard, qna, product, inventory,
 -- sales, basket
