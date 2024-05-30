@@ -68,9 +68,6 @@
                             Pen
                         </a>
                         <hr class="navbar-divider">
-                        <a href="${path1 }/product/list.do?cate=file" class="navbar-item" title="파일철">
-                            File
-                        </a>
                         <a href="${path1 }/product/list.do?cate=binder" class="navbar-item" title="바인더">
                             Binder
                         </a>
@@ -94,14 +91,9 @@
                         <a href="${path1 }/free/list.do" class="navbar-item">
                             Free
                         </a>
-                        <a href="${path1 }/file/filelist1.do" class="navbar-item">
-                            Fileboard
+                        <a href="${path1 }/fileboard/list.do?pageNo=1" class="navbar-item">
+                            Dataroom
                         </a>
-                        <c:if test="${sid.equals('admin')}">
-                        <a href="${path1 }/file/fileupload1.do" class="navbar-item">
-                            FileUpload
-                        </a>
-                        </c:if>
                         <hr class="navbar-divider">
                         <a href="${path1 }/service/online.do" class="navbar-item">
                             Contact
@@ -130,8 +122,11 @@
                         </a>
                     </c:if>
                     <c:if test="${sid.equals('admin')}">
-                        <a href="${path1}/member/list.do" class="button is-light">
+                        <a href="${path1}/admin/memberList.do" class="button is-light">
                             MemberList
+                        </a>
+                        <a href="${path1}/admin/insertInventory.do" class="button is-light">
+                            상품 입고
                         </a>
                     </c:if>
                     </div>
